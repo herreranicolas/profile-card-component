@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  background: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+  background-color: var(--dark-cyan);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 36vh, left 48vw top 52vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.card-upper-image img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-center-image img {
+  margin-top: -3.5rem;
+  margin-left: 7.75rem;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.card-text-container h1 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 18px;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.card-text-container span {
+  margin-left: 0.5rem;
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.card-text-container h2 {
+  font-size: 14px;
+  text-align: center;
+  color: var(--dark-grayish-blue);
+  margin-top: 0.33rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.card-footer {
+  border-top: 0.5px solid hsl(0, 0%, 91%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.card-footer h2 {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-footer p {
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  top: 0;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 91%);
+}
